@@ -179,3 +179,28 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# Project secrets
+kaggle.json
+info/kaggle.json
+info/key.txt
+
+# Local paper library. Keep bibliographic notes in docs instead of committing PDFs.
+paper/*.pdf
+
+# Kaggle downloaded outputs and generated training artifacts.
+kaggle_work/*output*/
+kaggle_work/analysis/
+**/logdir/
+**/ckpt/
+**/replay/
+**/*.pkl
+**/*.npz
+**/*.mp4
+**/*.pb
+**/*.float
+**/raw_*.jsonl
+**/clean_replay_steps*.jsonl
+
+# Keep source notebooks and lightweight snapshots trackable; ignore notebook autosaves only.
+**/.ipynb_checkpoints/
